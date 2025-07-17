@@ -5,13 +5,177 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
-
+  }
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  .top-navigation li :hover {
+    color: #cd0b0b;
+    font-weight: bold;
+  }
+
+  .teammate-social-icons .facebook:hover {
+    color: white;
+    background-color: #0866ff;
+  }
+
+  .teammate-social-icons .linkedin:hover {
+    color: white;
+    background-color: #0a66c2;
+  }
+
+  .teammate-social-icons .twitter:hover {
+    color: white;
+    background-color: #019eee;
+  }
+
+  .content .social-icons span:hover,
+  .content .social-icons i:hover {
+    color: white;
+  }
+
+  .address p:hover {
+    color: #2dff08;
+  }
+
+  .email li :hover {
+    color: #0866ff;
+  }
+
+  .phones li :hover {
+    color: #ff000d;
+  }
+
+  .footer-content h3:hover {
+    color: #deff08;
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 
-/* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 1023px) {
+  .top-navigation .trigram {
+    display: block;
+  }
+
+  .top-navigation li {
+    display: none;
+  }
+
+  .portfolio-content .section-info h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: normal;
+  }
+
+  .portfolio-img-wrapper {
+    max-width: 200px;
+    max-height: 140px;
+  }
+
+  .portfolio-item .item-title {
+    font-weight: normal;
+  }
+  .teammates-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .teammate-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .teammates-list::before,
+  .teammates-list::after {
+    display: none;
+  }
+
+  .teammate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 15px);
+    max-width: 280px;
+  }
+
+  .teammate-data {
+    text-align: center;
+  }
+  .teammate-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .social-icons {
+    max-width: 210px;
+    max-height: 30px;
+    gap: 30px;
+  }
+  .social-icons span {
+    display: none;
+  }
+  .footer-contacts {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+  @media (max-width: 360px) {
+    .portfolio-list {
+      align-items: center;
+    }
+
+    .portfolio-item {
+      flex-direction: column;
+      align-items: center;
+    }
+    .portfolio-img-wrapper {
+      max-width: 100%;
+      max-height: 180px;
+    }
+
+    .portfolio-item-info {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
